@@ -1,0 +1,23 @@
+:root{
+--Blue-800: hsl(234, 29%, 20%);
+--Blue-700: hsl(235, 18%, 26%);
+--Grey: hsl(0, 0%,58%);
+--White: hsl(0, 0%, 100%);
+}
+
+
+
+body{
+    background-color: var(--Blue-700);    
+}
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
