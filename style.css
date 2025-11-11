@@ -18,6 +18,17 @@ body{
     line-height: 1.2;
     height: 100vh;
     width: 100%;
+    font-family: 'Roboto-Regular', sans-serif;
+}
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(./assets/fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(./assets/fonts/Roboto-Bold.ttf) format('truetype');
 }
 
 .container{
@@ -38,16 +49,60 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    border: 1px solid red;
-    height: 350px;
-    font-size: 20px;
+    height: 450px;
+    font-size: 17px;
+    padding: 20px 60px;
+
 }
 
 .form-container h1{
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Roboto-Bold', sans-serif;
     margin-bottom: 20px;
+
 }
+
+.form-container p{
+    margin-bottom: 18px;
+}
+
+.form-ul li{
+    padding: 8px 0;
+}
+
+.form-ul{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/* Form */
+
+.subscription-form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subscription-form label{
+    font-family: 'Roboto-Bold';
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.subscription-form input[type="email"]{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid var(--Grey);
+    margin-bottom:20px;
+}
+
+.submit{
+    padding: 15px;
+    border: none;
+    background-color: var(--Blue-800);
+    color: var(--White);
+    border-radius: 5px;
+} 
 
 .img-container img{
    width: 330px;
@@ -55,5 +110,5 @@ body{
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center; color: var(--White); margin-top: 5px;}
+.attribution a { color: hsl(14, 84%, 45%); font-family: 'Roboto-Bold', sans-serif; }
