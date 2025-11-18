@@ -6,7 +6,7 @@
 # Dependencies
 /node_modules
 /.pnp
-.pnp.js
+.pnp
 yarn.debug.log*
 yarn.error.log*
 npm-debug.log*
@@ -20,6 +20,7 @@ npm-debug.log*
 
 # Testing
 /coverage
+tester.html
 
 # Production
 /build

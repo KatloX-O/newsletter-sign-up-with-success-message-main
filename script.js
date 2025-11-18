@@ -3,6 +3,7 @@ const submit = document.getElementsByClassName('submit');
 const primary = document.querySelector('.primary');
 const secondary = document.querySelector('.secondary');
 const span = document.getElementById('emailThanks');
+const dismiss = document.querySelector('.dismiss');
 
 form.addEventListener('submit', (e) =>{
     const input = document.getElementById('email').value.trim();
@@ -33,7 +34,14 @@ form.addEventListener('submit', (e) =>{
     
 })
 
-console.log(primary)
+dismiss.addEventListener('click', (e) =>{
+    if(primary.style.display = 'flex'){
+     secondary.style.display = "none";
+    }else if(primary.style.display = 'none'){
+        secondary.style.display = "flex";
+    }    
+}
+)
 
 function validateEmail(input) {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
